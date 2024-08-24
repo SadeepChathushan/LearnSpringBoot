@@ -9,4 +9,5 @@ public interface ItemService {
 
     void addItem(RequestSaveItemDTO itemDTO);
 
+    List<ItemDTO> getItemByName(String itemName);
 }

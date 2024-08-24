@@ -30,10 +30,10 @@ public class ItemController {
 //        return customerDTO;
 //    }
 
-//    @GetMapping(path ="/get-by-name",params = "itemName")
-//    public List<ItemDTO> getItemByName(@RequestParam(value = "itemName") String itemName){
-//        List<ItemDTO> itemDTO =itemService.getItemByName(itemName);
-//        return itemDTO;
-//    }
+    @GetMapping(path ="/get-by-name",params = "name")
+    public List<ItemDTO> getItemByName(@RequestParam(value = "name") String itemName){
+        List<ItemDTO> itemDTO =itemService.getItemByName(itemName);
+        return itemDTO;
+    }
 }
 

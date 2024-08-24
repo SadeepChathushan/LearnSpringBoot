@@ -6,10 +6,11 @@ import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 //@Getter
 //@Setter
 //@ToString
-@Data
+
 // If we add @Data annotation it provide getter setter and to string
 
 @Entity
