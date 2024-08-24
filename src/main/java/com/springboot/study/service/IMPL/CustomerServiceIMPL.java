@@ -1,8 +1,9 @@
-package com.springboot.study.service;
+package com.springboot.study.service.IMPL;
 
 import com.springboot.study.dto.CustomerDTO;
 import com.springboot.study.entity.Customer;
 import com.springboot.study.repo.CustomerRepo;
+import com.springboot.study.service.CustomerService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
-public class CustomerServiceIMPL implements CustomerService{
+public class CustomerServiceIMPL implements CustomerService {
 
     @Autowired
     private CustomerRepo customerRepo;
