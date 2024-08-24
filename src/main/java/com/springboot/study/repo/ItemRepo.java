@@ -11,4 +11,5 @@ import java.util.List;
 @Repository
 public interface ItemRepo extends JpaRepository<Item,Integer> {
 
+    List<Item> findAllByItemNameIs(String itemName);
 }
