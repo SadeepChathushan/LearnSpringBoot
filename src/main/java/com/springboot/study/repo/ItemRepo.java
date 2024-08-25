@@ -10,6 +10,7 @@ import java.util.List;
 @EnableJpaRepositories
 @Repository
 public interface ItemRepo extends JpaRepository<Item,Integer> {
+      List<Item> findAllByItemNameIs(String itemName);
+//    List<Item> findAllByItemNameEqual(String itemName);                findByItemName=findByItemEqual
 
-    List<Item> findAllByItemNameIs(String itemName);
 }

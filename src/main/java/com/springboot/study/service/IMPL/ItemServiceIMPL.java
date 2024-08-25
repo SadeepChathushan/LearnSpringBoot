@@ -41,7 +41,9 @@ public class ItemServiceIMPL implements ItemService {
     @Override
     public List<ItemDTO> getItemByName(String itemName) {
       List<Item>items =itemRepo.findAllByItemNameIs(itemName);
-      List<ItemDTO> itemDTOS =itemMapper.entityListToDtoList(items);
+//        List<Item>items =itemRepo.findAllByItemNameEqual(itemName);
+
+        List<ItemDTO> itemDTOS =itemMapper.entityListToDtoList(items);
         return itemDTOS;
     }
 
